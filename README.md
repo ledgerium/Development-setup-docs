@@ -1,5 +1,5 @@
 ## Development-setup-docs
-A documentation on how to setup 
+A documentation on how to setup
 
 ## GitHub Repositories ##
 [GithHub Repo](https://github.com/ledgerium/Development-setup-docs)
@@ -21,5 +21,28 @@ A documentation on how to setup
 ### __Cloning a repo__
 
 1) Within your CLI, type : git clone git@github.com:ledgerium/Development-setup-docs.git
+
+### __Install Docker(Desktop && VScode)__
+
+ __Desktop__
+1) Go to https://www.docker.com/get-started, follow the instructions and download Docker.
+2) Within your CLI, type in : docker run hello-world to test whether Docker is installed succesfully.
+
+__VScode__
+1) Search for Docker in extensions, install the first extension.
+
+### __Build Using Docker__
+
+__Locally__
+1) run 'npm install' to install the dependencies
+2) run 'docker build .' to build images 
+**Important**
+If on Mac, and npm i doesn't work, try downgrading node to 8.16.0 and if it still doesn't work,
+type 'rm -rf node_modules/web3-providers/node_modules/websocket/.git/' to remove websocket file.
+
+__DockerContainer__
+1) Create a 'Dockerfile'
+2) run 'docker build -t file/filename' 
+3) run 'docker run -it --rm file/filename'
 
 
