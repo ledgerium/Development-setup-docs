@@ -39,7 +39,10 @@ __Locally__
 If on Mac, and npm i doesn't work, try downgrading node to 8.16.0 and if it still doesn't work,
 type 'rm -rf node_modules/web3-providers/node_modules/websocket/.git/' to remove websocket file.\
 2) run 'docker build .' to build images\
-3) start debugger 
+**Important**\
+If Docker shows error MSB3202: The project file was not found,\
+In the Dockerfile : 'COPY..' should be above 'RUN dotnet restore'
+3) start debugger \
 **Important**\
 If docker extension shows error, create a .vscode folder and add a launch.json file inside it.
 Add the following code  {
