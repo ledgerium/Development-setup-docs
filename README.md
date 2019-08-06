@@ -49,7 +49,7 @@ Add the following code  {
             "type": "node",
             "request": "launch",
             "name": "debug service.js",
-            "program": "${workspaceFolder}/luca-usr-management-svc/service.js"
+            "program": "${workspaceFolder}/repo-name/service.js"
         }
 
 __DockerContainer__
