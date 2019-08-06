@@ -35,8 +35,8 @@ __VScode__
 
 __Locally__
 1) run 'npm install' to install the dependencies
-2) run 'docker build .' to build images 
-**Important**
+2) run 'docker build .' to build images\
+**Important**\
 If on Mac, and npm i doesn't work, try downgrading node to 8.16.0 and if it still doesn't work,
 type 'rm -rf node_modules/web3-providers/node_modules/websocket/.git/' to remove websocket file.
 
