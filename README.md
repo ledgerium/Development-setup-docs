@@ -34,15 +34,25 @@ __VScode__
 ### __Build Using Docker__
 
 __Locally__
-1) run 'npm install' to install the dependencies
-2) run 'docker build .' to build images\
+1) run 'npm install' to install the dependencies\
 **Important**\
 If on Mac, and npm i doesn't work, try downgrading node to 8.16.0 and if it still doesn't work,
-type 'rm -rf node_modules/web3-providers/node_modules/websocket/.git/' to remove websocket file.
+type 'rm -rf node_modules/web3-providers/node_modules/websocket/.git/' to remove websocket file.\
+2) run 'docker build .' to build images\
+3) start debugger 
+**Important**\
+If docker extension shows error, create a .vscode folder and add a launch.json file inside it.
+Add the following code  {
+            "type": "node",
+            "request": "launch",
+            "name": "debug service.js",
+            "program": "${workspaceFolder}/luca-usr-management-svc/service.js"
+        }
 
 __DockerContainer__
 1) Create a 'Dockerfile'
 2) run 'docker build -t file/filename' 
 3) run 'docker run -it --rm file/filename'
+
 
 
