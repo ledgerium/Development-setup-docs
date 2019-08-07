@@ -29,7 +29,11 @@ A documentation on how to setup
 1) Within your CLI, type : 
    
    `git clone git@github.com:ledgerium/Development-setup-docs.git`
-
+   
+2) To switch to another branch, do the following eg : 
+ 
+   `git checkout -b feat/myob origin/feat/myob`
+   
 ### __Install Docker(Desktop && VScode)__
 
  __Desktop__
