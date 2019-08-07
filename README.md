@@ -26,10 +26,10 @@ A documentation on how to setup
 
 ### __Cloning a repo__
 
-1) Within your CLI, type : 
+1) Within your CLI, type git clone followed by the repo you intend to clone : 
    
    `git clone git@github.com:ledgerium/Development-setup-docs.git`
-   
+
 2) To switch to another branch, do the following eg : 
  
    `git checkout -b feat/myob origin/feat/myob`
