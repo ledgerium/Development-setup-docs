@@ -78,4 +78,15 @@ __DockerContainer__
    `docker run -it --rm file/filename`
 
 
+### __Important Note__
+**Xero-events-ingest-svc**
+
+
+If you find this error :  
+
+`throw new MongooseError('The `uri` parameter to `openUri()` must be a ' +
+    ^
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.`
+
+This means you're missing the 'environments' file and you need to create a  .env file and copy the secret code to proceed at your local machine.
 
